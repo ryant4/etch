@@ -1,5 +1,5 @@
 div>div {
-    background-color: aqua;
+    background-color: linen;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 100%;
@@ -13,6 +13,14 @@ div>div {
 #sketch-container {
     height: 500px;
     width: 500px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: red;
+    border-width: 15px;
     display: flex;
 }
 
+
+.marked-pixel {
+    background-color: black;
+}

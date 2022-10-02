@@ -1,7 +1,7 @@
 
 const sketchContainer = document.querySelector('#sketch-container');
-let height = 80;
-let width = 80;
+let height = 40;
+let width = 40;
 
 for (let i = 0; i < height; i++) {
 
@@ -10,10 +10,19 @@ for (let i = 0; i < height; i++) {
 
     for (let j = 0; j < width; j++) {
         const newDiv = document.createElement('div');
+        newDiv.setAttribute('class', 'etch-pixel');
+        newDiv.addEventListener('mouseenter', () => {
+            newDiv.setAttribute('class', 'marked-pixel');
+        })
         newLine.appendChild(newDiv);
+        
 
     }
 
     sketchContainer.appendChild(newLine);
 
 }
+
+
+const etchPixel = document.querySelectorAll('.etch-pixel');
+console.log (etchPixel);
