@@ -23,6 +23,3 @@ for (let i = 0; i < height; i++) {
 
 }
 
-
-const etchPixel = document.querySelectorAll('.etch-pixel');
-console.log (etchPixel);

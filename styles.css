@@ -1,3 +1,9 @@
+.whole-page-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 div>div {
     background-color: linen;
     flex-grow: 1;
@@ -18,9 +24,34 @@ div>div {
     border-color: red;
     border-width: 15px;
     display: flex;
+    margin-top: 50px;
 }
 
 
 .marked-pixel {
     background-color: black;
+}
+
+.setting-style {
+    color: white;
+    background-color: black;
+    font-size: small;
+    height: 30px;
+    width: 200px;
+    margin: 25px;
+    text-align: center;
+}
+
+#settings-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: xx-large;
 }
