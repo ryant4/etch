@@ -32,7 +32,8 @@ div>div {
     background-color: black;
 }
 
-.setting-style {
+#setting-style,
+#button-style {
     color: white;
     background-color: black;
     font-size: small;
