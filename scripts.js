@@ -1,7 +1,10 @@
-
 const sketchContainer = document.querySelector('#sketch-container');
-let height = 40;
-let width = 40;
+
+
+function buildGrid () {
+
+    let height = 40;
+    let width = 40;
 
 for (let i = 0; i < height; i++) {
 
@@ -22,4 +25,17 @@ for (let i = 0; i < height; i++) {
     sketchContainer.appendChild(newLine);
 
 }
+}
 
+function eraseGrid () {
+    while(sketchContainer.firstChild) {
+        sketchContainer.removeChild(sketchContainer.firstChild);
+    }
+
+}
+
+buildGrid();
+
+eraseGrid();
+
+buildGrid();
